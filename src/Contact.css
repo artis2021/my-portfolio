@@ -1,0 +1,94 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-dark);
+    gap: 2rem;
+}
+
+.contact h2{
+    font-size: 3rem;
+}
+
+.contact__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.contact__item{
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact__item:hover{
+    box-shadow: 0 0 0 0.1rem var(--quaternary-dark);
+}
+
+.email, .outlook, .linkedin, .instagram{
+    font-size: 2rem;
+    color: var(--primary-dark);
+    background:  var(--quaternary-dark);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__item a{
+    font-size: 1rem;
+    color: var(--quaternary-dark);
+    font-weight: bold;
+    border-bottom: 2px solid var(--quaternary-dark);
+}
+
+/* Light theme */
+@media (prefers-color-scheme: light) {
+    .contact{
+        background-color: var(--secondary-light);
+    }
+
+    .contact__item:hover{
+        box-shadow: 0 0 0 0.1rem var(--quaternary-light);
+    }
+
+    .email, .outlook, .linkedin, .instagram{
+        color: var(--primary-light);
+        background:  var(--quaternary-light);
+    }
+
+    .contact__item a{
+        color: var(--quaternary-light);
+        border-bottom: 2px solid var(--quaternary-light);
+    }
+}
+
+/* Big devices */
+@media (min-width: 768px) {
+    .contact{
+        padding: 2rem;
+    }
+
+    .contact__container{
+        margin-top: 2rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1200px;
+    }
+}

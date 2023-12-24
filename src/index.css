@@ -1,0 +1,53 @@
+/* Mobile first design */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color-scheme: light dark;
+  font-synthesis: none;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Dark mode colors */
+  --primary-dark: #222831;
+  --secondary-dark: #3a3e44;
+  --tertiary-dark: #eeeeee;
+  --quaternary-dark: #24f8aa;
+
+  /* Light mode colors */
+  --primary-light: #e9e0da;
+  --secondary-light: #d8c3a5;
+  --tertiary-light: #222831;
+  --quaternary-light: #d76c01;
+
+  --white: #ffffff;
+  --black: #242424;
+
+  /* Shadow */
+  --shadow-light: 0 0.2rem 0.5rem rgba(0,0,0,0.3);
+  --shadow-dark: 0 0.2rem 0.5rem rgba(0,0,0,0.5);
+
+  /* linear gradient */
+  --gradient-light: linear-gradient(0deg, var(--primary-light), var(--white));
+  --gradient-dark: linear-gradient(0deg,var(--primary-dark), var(--black));
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+section{
+  padding: 2rem;
+  width: 100%;
+  min-height: 100vh;
+}
+

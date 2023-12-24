@@ -1,0 +1,65 @@
+/* Mobile first design */
+body{
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.app {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--primary-dark);
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.move-top{
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-dark);
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--quaternary-dark);
+}
+
+.move-top:hover{
+  background-color: var(--quaternary-dark);
+  color: var(--primary-dark);
+}
+
+.move-top:active{
+  transform: scale(0.9);
+}
+
+/* Light theme */
+@media (prefers-color-scheme: light) {
+  .app {
+    background-color: var(--primary-light);
+  }
+  
+  .move-top{
+    background-color: var(--secondary-light);
+    border: 1px solid var(--quaternary-light);
+  }
+  
+  .move-top:hover{
+    border: 1px solid var(--quaternary-light);
+    background-color: var(--quaternary-light);
+    color: var(--primary-light);
+  }
+}
+
+/* Big devices */
+@media (min-width: 768px) {
+  .move-top{
+    bottom: 2rem;
+    right: 2rem;
+  }
+}

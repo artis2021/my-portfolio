@@ -1,0 +1,149 @@
+.academics{
+    background-color: var(--primary-dark);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.academics h2{
+    color: var(--quaternary-dark);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.academics .timeline{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+.timeline__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: var(--secondary-dark);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    width: 250px;
+}
+
+.left{
+    align-self: flex-start;
+}
+
+.right{
+    align-self: flex-end;
+}
+
+.timeline__image{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.timeline__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.timeline__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.timeline__info .school{
+    color: var(--quaternary-dark);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.timeline__info .degree{
+    color: var(--tertiary-dark);
+    font-size: 0.8rem;
+}
+
+.timeline__info .duration{
+    color: var(--tertiary-dark);
+    font-size: 0.7rem;
+}
+
+/* Light theme */
+@media (prefers-color-scheme: light) {
+    .academics{
+        background-color: var(--primary-light);
+    }
+
+    .academics h2{
+        color: var(--quaternary-light);
+    }
+
+    .timeline__item{
+        background-color: var(--secondary-light);
+    }
+
+    .timeline__info .school{
+        color: var(--quaternary-light);
+    }
+
+    .timeline__info .degree{
+        color: var(--tertiary-light);
+    }
+
+    .timeline__info .duration{
+        color: var(--tertiary-light);
+    }
+}
+
+/* Big devices */
+@media (min-width: 768px) {
+    .academics{
+        padding: 5rem;
+    }
+
+    .academics h2{
+        font-size: 3rem;
+        width: 600px;
+    }
+
+    .timeline{
+        flex-direction: row;
+        gap: 0rem;
+    }
+
+    .timeline__item{
+        width: 300px;
+    }
+
+    .timeline__image{
+        width: 100px;
+        height: 100px;
+    }
+
+    .timeline__info .school{
+        font-size: 1.2rem;
+    }
+
+    .timeline__info .degree{
+        font-size: 1rem;
+    }
+
+    .timeline__info .duration{
+        font-size: 0.8rem;
+    }
+
+}
+

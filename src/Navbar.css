@@ -1,0 +1,126 @@
+/* navbar styling */
+.navbar {
+    width: 100%;
+    z-index: 100;
+    position: sticky;
+    background-color: var(--primary-dark);
+    top: 0;
+    right: 0;
+}
+
+.navbar__hamburger {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    z-index: 100;
+}
+
+.hamburger__icon {
+    color: var(--tertiary-dark);
+}
+
+.navbar__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0.3rem;
+    height: 100vh;
+    transition: all 0.5s ease;
+    transform: translateX(100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--secondary-dark);
+}
+
+.navbar .show {
+    transform: translateX(0);
+}
+
+.navbar__links a {
+    color: var(--tertiary-dark);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 2rem;
+    padding: 0.2rem 2rem;
+}
+
+.navbar__links a:hover {
+    color: var(--quaternary-dark);
+    transform: translateX(0.5rem);
+}
+
+.navbar__links a:active {
+    color: var(--quaternary-dark);
+    transform: scale(0.9);
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    .hamburger__icon {
+        color: var(--tertiary-light);
+    }
+
+    .navbar__links {
+        background-color: var(--secondary-light);
+    }
+
+    .navbar__links a {
+        color: var(--tertiary-light);
+    }
+
+    .navbar__links a:hover {
+        color: var(--quaternary-light);
+        box-shadow:  0 0 0 2px var(--quaternary-light);
+        border-radius: 40px;
+    }
+
+    .navbar__links a:active {
+        color: var(--quaternary-light);
+        transform: scale(0.9);
+    }
+}
+
+/* Tablet screen */
+@media (min-width: 768px) {
+    .navbar {
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+    }
+    
+    .navbar__hamburger {
+        display: none;
+    }
+
+    .navbar__links {
+        flex-direction: row;
+        height: auto;
+        padding: 1rem;
+        width: 100%;
+        width: auto;
+        gap: 1rem;
+        position: relative;
+        background-color: transparent;
+    }
+
+    .navbar__links a {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar__links a:hover {
+        border-radius: 40px;
+    }
+
+}
+
+
+/*  Desktop screen */
