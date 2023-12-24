@@ -17,7 +17,6 @@
 .projects__container{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     gap: 2rem;
 }
@@ -92,7 +91,7 @@
 
 .technologies{
     /* border-top: 2px solid var(--quaternary-dark); */
-    padding: 1rem 0;
+    padding: 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -166,14 +165,20 @@
     }
 
     .project{
-        max-width: 800px;
-        padding: 1rem 2rem;
-        flex-direction: row;
+        max-width: 600px;
+        padding: 2rem;
+        justify-content: space-between;
     }
 
     .project__image{
-        height: 350px;
+        width: 100%;
+        height: auto;
     }
+
+    .project__image img{
+        max-height: 300px;
+    }
+
 
     .project__info{
         padding: 0 1rem;
