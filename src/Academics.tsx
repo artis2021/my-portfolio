@@ -40,33 +40,33 @@ const Academics = () => {
                     {data.map((item, index) => (
                         <>
                             {
-                                    <motion.div
-                                        className={`timeline__item ${index % 2 === 0 ? 'left' : 'right'}`}
-                                        initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
-                                        whileInView={{ opacity: 1, x: 0 }}
-                                        transition={{ duration: 1 }}
-                                        whileHover={{ 
-                                            rotate: [0, 10, -10, 0],
-                                            transition: { duration: 0.3 }
-                                        }}
-                                        whileTap={{
-                                            translateY: [0, -15, 15, 0],
-                                            transition: { duration: 0.3 }
-                                        }}
-                                    >
-                                        <div className="timeline__image">
-                                            <img
-                                                src={item.logo}
-                                                alt="logo"
-                                            />
-                                        </div>
-                                        <div className="timeline__info">
-                                            <h3 className='school'>{item.school}</h3>
-                                            <p  className='degree'>{item.degree}</p>
-                                            <p className='duration'>{item.start} - {item.end}</p>
-                                        </div>
-                                    </motion.div>
-                                
+                                <motion.div
+                                    className={`timeline__item ${index % 2 === 0 ? 'left' : 'right'}`}
+                                    initial={{ opacity: 0, y: 100 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 1 }}
+                                    whileHover={{
+                                        rotate: [0, 10, -10, 0],
+                                        transition: { duration: 0.5 }
+                                    }}
+                                    whileTap={{
+                                        translateY: [0, -15, 15, 0],
+                                        transition: { duration: 0.5 }
+                                    }}
+                                >
+                                    <div className="timeline__image">
+                                        <img
+                                            src={item.logo}
+                                            alt="logo"
+                                        />
+                                    </div>
+                                    <div className="timeline__info">
+                                        <h3 className='school'>{item.school}</h3>
+                                        <p className='degree'>{item.degree}</p>
+                                        <p className='duration'>{item.start} - {item.end}</p>
+                                    </div>
+                                </motion.div>
+
                             }
                         </>
                     ))}

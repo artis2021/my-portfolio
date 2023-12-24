@@ -2,7 +2,6 @@
 body{
   width: 100%;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 .app {
@@ -10,7 +9,6 @@ body{
   width: 100%;
   background-color: var(--primary-dark);
   text-align: center;
-  overflow-x: hidden;
 }
 
 .move-top{

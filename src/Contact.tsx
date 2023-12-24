@@ -29,7 +29,7 @@ const Contact = () => {
                 <div className="email">
                 <SiGmail />
                 </div>
-                <a href="mailto:a.gmail.com">abhishekku20022002@gmail.com</a>
+                <a href="mailto:upasnagupta3333@gmail.com">upasnagupta3333@gmail.com</a>
             </motion.div>
             <motion.div
             className='contact__item'
@@ -40,7 +40,7 @@ const Contact = () => {
                 <div className="outlook">
                 <PiMicrosoftOutlookLogoFill />
                 </div>
-                <a href="mailto:a.iitg.ac.in">abhi200101006@iitg.ac.in</a>
+                <a href="mailto:s.arti@iitg.ac.in">s.arti@iitg.ac.in</a>
             </motion.div>
             <motion.div
             className='contact__item'
@@ -51,7 +51,7 @@ const Contact = () => {
                 <div className="linkedin">
                 <FaLinkedin />
                 </div>
-                <a href="https://www.linkedin.com/in/a">abhishekiitg</a>   
+                <a href="https://www.linkedin.com/in/artisahu/" target="_blank" rel="noreferrer">artisahu</a>   
             </motion.div>
             <motion.div
             className='contact__item'
@@ -62,7 +62,7 @@ const Contact = () => {
                 <div className="instagram">
                 <FaInstagram />
                 </div>
-                <a href="saajda" target="_blank" rel="noreferrer">abhishekkumar___006</a>
+                <a href="https://www.instagram.com/arti.sahu2020/" target="_blank" rel="noreferrer">arti.sahu2020</a>
 
             </motion.div>
             
