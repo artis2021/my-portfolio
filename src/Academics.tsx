@@ -23,8 +23,8 @@ const Academics = () => {
             logo: jnv,
             school: 'Jawahar Navaodaya Vidyalaya, Jaunpur',
             degree: 'Secondary Education',
-            start: 'July 2017',
-            end: 'May 2018',
+            start: 'July 2016',
+            end: 'May 2017',
         },
     ]
     return (
