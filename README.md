@@ -1,6 +1,7 @@
 # My Personal portfolio website
 ## This is the repository for my personal portfolio website. It is a static website built using ReactJS and hosted on Vercel.
-### The website is live at [](Will be updated soon)
+<!-- https://artisahuiitg.vercel.app -->
+### The website is live at [https://artisahuiitg.vercel.app](https://artisahuiitg.vercel.app)
 
 ## How to use this as a template?
 ### 1. Clone the repository
